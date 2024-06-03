@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 
 function Card({ data, setCardData, setEditData }) {
   const [statusFilter, setFilter] = useState("All");
-  
+
   const handleDelete = (id) => {
     const deleteData = data.filter((item) => {
       return item.id !== id;
@@ -25,7 +25,7 @@ function Card({ data, setCardData, setEditData }) {
       return item.status === statusFilter;
     }
   });
-  
+
   const handleEdit = (item) => {
     setEditData(item);
   };
@@ -108,7 +108,7 @@ function Card({ data, setCardData, setEditData }) {
             </div>
           ))
         ) : (
-          <h1 className="text-center text-color">Add a To-Do</h1>
+          null
         )}
       </div>
     </div>

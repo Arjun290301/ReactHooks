@@ -40,14 +40,14 @@ function AddToDo({ appData, setCardData, editData, setEditData }) {
       return;
     }
 
-    if(editData){
-      const updateData = appData.map(item => item.id === editData.id ? {...item, addTodoName, addTodoDescription} : item)
+    if (editData) {
+      const updateData = appData.map(item => item.id === editData.id ? { ...item, addTodoName, addTodoDescription } : item)
       setCardData(updateData);
       setEditData(null)
     }
-    else{
+    else {
       const data = {
-        id:appData.length + 1,
+        id: appData.length + 1,
         addTodoName,
         addTodoDescription,
         status: 'Not Selected'
@@ -56,7 +56,7 @@ function AddToDo({ appData, setCardData, editData, setEditData }) {
       setTodoName('');
       setTodoDescription('');
     }
-    
+
   }
 
   return (

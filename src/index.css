@@ -29,9 +29,25 @@
 .custom-select-width-filter{
   width: 150px;
 }
+.Row{
+  display: flex;
+}
+.align-items-center{
+margin-right: 300px;
+  display: flex;
+  flex-direction: column;
 
+}
+.buttonSizing {
+  margin-left: 90px;
+}
+
+.col{
+  margin: 40px;
+  width: 50%;
+}
 .custom-select-background {
-  background-color: #FC8181;
+  background-color: #f51731;
   color: #fff;
   appearance: none;
   -webkit-appearance: none;
